@@ -23,6 +23,7 @@ body {
   font-style: normal;
   font-optical-sizing: auto;
   font-weight: 700;
+  background-color: var(--container-bg);
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
+  margin: 0 auto;
 }
 
 .qr-code-component {
