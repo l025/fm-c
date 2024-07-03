@@ -26,6 +26,10 @@ body {
   background-color: var(--container-bg);
 }
 
+.level-one {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: var(--desktop-width);
@@ -69,7 +73,7 @@ body {
   text-align: center;
   color: var(--component-foreground);
 }
-.qr-code-component__content strong {
+.qr-code-component__content h2 {
   font-weight: 700;
   font-size: 1.4rem;
 }
