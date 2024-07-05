@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/l025/fm-c/mortgage-repayment-calculator/)
+- Solution URL: [Add solution URL here](https://github.com/l025/fm-c/tree/main/public/mortgage-repayment-calculator)
 - Live Site URL: [Add live site URL here](https://fm-c.vercel.app/mortgage-repayment-calculator/)
 
 ### Built with

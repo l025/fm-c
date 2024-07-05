@@ -37,11 +37,10 @@
       }
 
       input {
-        @apply w-auto;
         accent-color: #8d9328;
       }
       span {
-        @apply flex-1 font-medium;
+        @apply flex-1 w-full font-medium;
       }
     }
 

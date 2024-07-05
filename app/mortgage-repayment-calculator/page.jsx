@@ -203,6 +203,7 @@ export default function Mortgage() {
                     id="repayment"
                     checked={form.type === 'repayment'}
                     onChange={handleChange}
+                    className="!w-auto"
                   />
                   <span>Repayment</span>
                 </label>
@@ -214,6 +215,7 @@ export default function Mortgage() {
                     id="interest_only"
                     checked={form.type === 'interest_only'}
                     onChange={handleChange}
+                    className="!w-auto"
                   />
                   <span>Interest Only</span>
                 </label>
