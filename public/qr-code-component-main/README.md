@@ -6,7 +6,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![](./screenshot.jpg)
 
-- Live Site URL: [QR code component](https://frontendmaster-challenges.vercel.app/qr-code-component-main/index.html)
+- Live Site URL: [QR code component](https://fm-c.vercel.app/qr-code-component-main/index.html)
 
 ### Built with
 
