@@ -9,9 +9,8 @@ export default function Result({ result }) {
         <h3 className="text-lg font-semibold">Your results</h3>
         <p className="text-neutral-300 text-sm font-light">
           Your results are shiwn below based on the information you provided. To
-          adjust the results, edit the form and click `&quot;`, `&ldquo;`,
-          `&#34;`, `&rdquo;`calculate repayments`&quot;`, `&ldquo;`, `&#34;`,
-          `&rdquo;` again.
+          adjust the results, edit the form and click &quot;calculate
+          repayments&quot; again.
         </p>
 
         <div className="flex flex-col gap-2 border-t-4 border-primary rounded-md p-6 my-5 bg-neutral-900">
@@ -23,8 +22,7 @@ export default function Result({ result }) {
           </strong>
           <hr className="border-neutral-700 my-3" />
           <p className="text-neutral-300 text-sm font-light">
-            Total you`&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`ll repay over the
-            term
+            Total you&rsquo;ll repay over the term
           </p>
 
           <strong className="text-lg font-bold text-white">

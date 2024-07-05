@@ -9,9 +9,8 @@ export default function Empty() {
         />
         <h3 className="text-lg font-semibold">Results shown here</h3>
         <p className="text-neutral-300 text-sm font-light">
-          Complete the form and click `&quot;`, `&ldquo;`, `&#34;`,
-          `&rdquo;`calculate repayments`&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`
-          to see what your mounthly repayments would be.
+          Complete the form and click &quot;calculate repayments&quot; to see
+          what your mounthly repayments would be.
         </p>
       </div>
     </>
