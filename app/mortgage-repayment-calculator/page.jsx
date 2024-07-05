@@ -195,7 +195,12 @@ export default function Mortgage() {
                   (errors.type !== undefined ? 'invalid' : '')
                 }>
                 <label>Mortgage Type</label>
-                <label className="input-wr radio group" htmlFor="repayment">
+                <label
+                  className={
+                    'input-wr radio group ' +
+                    (form.type === 'repayment' ? 'active' : '')
+                  }
+                  htmlFor="repayment">
                   <input
                     type="radio"
                     name="type"
@@ -207,7 +212,12 @@ export default function Mortgage() {
                   />
                   <span>Repayment</span>
                 </label>
-                <label className="input-wr radio group" htmlFor="interest_only">
+                <label
+                  className={
+                    'input-wr radio group ' +
+                    (form.type === 'interest_only' ? 'active' : '')
+                  }
+                  htmlFor="interest_only">
                   <input
                     type="radio"
                     name="type"
