@@ -7,7 +7,7 @@ export default function Empty() {
           src="/mortgage-repayment-calculator/assets/images/illustration-empty.svg"
           alt="empty"
         />
-        <h3 className="text-lg font-semibold">Results shown here</h3>
+        <h2 className="text-lg font-semibold">Results shown here</h2>
         <p className="text-neutral-300 text-sm font-light">
           Complete the form and click &quot;calculate repayments&quot; to see
           what your mounthly repayments would be.

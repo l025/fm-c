@@ -6,7 +6,7 @@ export default function Result({ result }) {
   return (
     <>
       <div className="flex flex-col gap-2">
-        <h3 className="text-lg font-semibold">Your results</h3>
+        <h2 className="text-lg font-semibold">Your results</h2>
         <p className="text-neutral-300 text-sm font-light">
           Your results are shiwn below based on the information you provided. To
           adjust the results, edit the form and click &quot;calculate

@@ -142,6 +142,7 @@ export default function Mortgage() {
                   <input
                     type="text"
                     name="amount"
+                    id="amount"
                     value={form.amount.toLocaleString()}
                     onChange={handleChange}
                     autoFocus
