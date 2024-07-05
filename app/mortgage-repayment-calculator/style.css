@@ -29,21 +29,6 @@
     @apply hover:border-neutral-500;
     @apply focus-within:border-primary focus-within:bg-primary !important;
 
-    &.radio {
-      @apply flex gap-2 items-center px-2.5 py-1.5 mb-1.5 bg-white;
-
-      &:has(input:checked) {
-        @apply border-primary bg-primary/15 !important;
-      }
-
-      input {
-        accent-color: #8d9328;
-      }
-      span {
-        @apply flex-1 w-full font-medium;
-      }
-    }
-
     input {
       @apply w-full p-1.5 px-3 focus:border-none focus:outline-none pointer-events-auto font-medium bg-white;
     }
@@ -53,6 +38,20 @@
     }
     .postfix {
       @apply right-0 left-auto;
+    }
+  }
+  .input-wr.radio {
+    @apply flex gap-2 items-center px-2.5 py-1.5 mb-1.5 bg-white;
+
+    &:has(input:checked) {
+      @apply border-primary bg-primary/15 !important;
+    }
+
+    input[type='radio'] {
+      accent-color: #8d9328;
+    }
+    span {
+      @apply flex-1 w-full font-medium;
     }
   }
 
