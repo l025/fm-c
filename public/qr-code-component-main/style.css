@@ -78,7 +78,7 @@ body {
   font-size: 1.4rem;
 }
 .qr-code-component__content p {
-  font-weight: 400;
+  font-weight: 500;
   margin: 16px;
   color: var(--component-foreground-lighter);
 }

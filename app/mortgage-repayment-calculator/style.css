@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 61 70% 52%;
+    --color-secondary: 4 69% 50%;
+
+    --color-neutral-100: 202 86% 94%;
+    --color-neutral-300: 203 41% 72%;
+    --color-neutral-500: 200 26% 54%;
+    --color-neutral-700: 200 24% 40%;
+    --color-neutral-900: 202 55% 16%;
+
+    --font-size: 16px;
+  }
+}
+.form-control {
+  > label {
+    @apply block pb-1.5 text-sm text-neutral-700;
+  }
+  > label ~ label {
+    @apply text-base pb-0 text-current;
+  }
+
+  .input-wr {
+    @apply relative border border-neutral-300 bg-neutral-100 rounded-[4px] overflow-hidden transition-colors;
+    @apply hover:border-neutral-500;
+    @apply focus-within:border-primary focus-within:bg-primary !important;
+
+    &.radio {
+      @apply flex gap-2 items-center px-2.5 py-1.5 mb-1.5;
+
+      &:has(input:checked) {
+        @apply border-primary bg-primary/15 !important;
+      }
+
+      input {
+        @apply w-auto;
+        accent-color: #8d9328;
+      }
+      span {
+        @apply flex-1 font-medium;
+      }
+    }
+
+    input {
+      @apply w-full p-1.5 px-3 focus:border-none focus:outline-none pointer-events-auto font-medium bg-white;
+    }
+    .prefix,
+    .postfix {
+      @apply bg-transparent text-neutral-700 px-3.5 absolute left-0 top-0 bottom-0 text-sm flex items-center justify-center pointer-events-auto;
+    }
+    .postfix {
+      @apply right-0 left-auto;
+    }
+  }
+
+  &.invalid {
+    .input-wr:not(.radio) {
+      @apply border-secondary bg-secondary !important;
+    }
+
+    .prefix,
+    .postfix {
+      @apply text-white !important;
+    }
+    .error-msg {
+      @apply block !important;
+    }
+  }
+
+  .error-msg {
+    @apply text-xs text-red-700 py-1;
+  }
+}
