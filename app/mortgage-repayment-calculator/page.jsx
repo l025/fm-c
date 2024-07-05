@@ -191,7 +191,8 @@ export default function Mortgage() {
 
               <div
                 className={
-                  'form-control ' + (errors.type !== undefined ? 'invalid' : '')
+                  'form-control radio' +
+                  (errors.type !== undefined ? 'invalid' : '')
                 }>
                 <label>Mortgage Type</label>
                 <label className="input-wr radio group" htmlFor="repayment">
