@@ -30,7 +30,7 @@
     @apply focus-within:border-primary focus-within:bg-primary !important;
 
     &.radio {
-      @apply flex gap-2 items-center px-2.5 py-1.5 mb-1.5;
+      @apply flex gap-2 items-center px-2.5 py-1.5 mb-1.5 bg-white;
 
       &:has(input:checked) {
         @apply border-primary bg-primary/15 !important;
