@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 230 35% 7%;
+    --color-secondary: 231 77% 90%;
+  }
+}
+
+@layer utilities {
+  .nav-text {
+    @apply text-[14px] xl:text-[16px] tracking-wide;
+  }
+  .sh-s {
+    font-size: 14px;
+    /* line-height: 16.8%; */
+    letter-spacing: 2px;
+  }
+  .sh-l {
+    font-family: Bellefair, serif;
+    font-size: 28px;
+    /* line-height: 32.1%; */
+    letter-spacing: 0px;
+  }
+  .h-xs {
+    @apply text-[16px] md:text-[20px] xl:text-[28px];
+    /* md:leading-[4px] */
+    /* line-height: 33.6%; */
+  }
+  .h-s {
+    @apply text-[18px] md:text-[24px] xl:text-[32px];
+    font-family: Bellefair, serif;
+    /* line-height: 36.7%; */
+    letter-spacing: 0px;
+  }
+  .h-m {
+    @apply text-[24px] md:text-[40px] xl:text-[56px] xl:leading-none;
+    font-family: Bellefair, serif;
+    /* line-height: 64.2%; */
+    letter-spacing: 0px;
+  }
+  .h-l {
+    @apply text-[56px] md:text-[80px] xl:text-[96px];
+    font-family: Bellefair, serif;
+    line-height: 114.6%;
+    letter-spacing: 0px;
+  }
+  .h-xl {
+    @apply text-[80px] md:text-[144px];
+    font-family: Bellefair, serif;
+    line-height: 171.9%;
+    letter-spacing: 0px;
+  }
+}
+body {
+  @apply text-[15px] md:text-[16px] xl:text-[18px];
+  font-family: Barlow, Bellefair, serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
