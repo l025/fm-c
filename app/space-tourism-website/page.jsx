@@ -5,12 +5,12 @@ export default function HomePage() {
     <>
       <main
         className={
-          'flex justify-center items-end min-h-screen bg-neutral-100 bg-cover' +
+          'flex justify-center items-end min-h-screen bg-neutral-100 bg-cover brightness-50' +
           ' bg-[url("/space-tourism-website/assets/home/background-home-mobile.jpg")]' +
           ' md:bg-[url("/space-tourism-website/assets/home/background-home-tablet.jpg")]' +
           ' xl:bg-[url("/space-tourism-website/assets/home/background-home-desktop.jpg")]'
         }>
-        <div className="container pt-32">
+        <div className="container pt-32 md:pt-40 xl:py-6">
           <div className="flex flex-col xl:flex-row gap-16 items-center justify-center xl:justify-between mb-32 mx-8 md:mx-12 xl:mx-32 text-center xl:text-left">
             <div className="flex-1 flex flex-col text-secondary">
               <h1 className="flex flex-col">

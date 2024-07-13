@@ -12,13 +12,13 @@ export default function CrewContent({ data }) {
     <>
       <main
         className={
-          'flex justify-center items-start md:items-start min-h-screen bg-neutral-100 bg-cover' +
+          'flex justify-center items-start md:items-start min-h-screen bg-neutral-100 bg-cover brightness-50' +
           ' bg-[url("/space-tourism-website/assets/crew/background-crew-mobile.jpg")]' +
           ' md:bg-[url("/space-tourism-website/assets/crew/background-crew-tablet.jpg")]' +
           ' xl:bg-[url("/space-tourism-website/assets/crew/background-crew-desktop.jpg")]'
         }>
         <div className="container ">
-          <div className="flex flex-col md:gap-6 items-center justify-center min-h-screen xl:relative xl:justify-between xl:items-start mx-8 md:mx-12 xl:mx-32 xl:pb-10 text-center xl:text-left">
+          <div className="flex flex-col md:gap-6 items-center justify-center min-h-screen xl:relative xl:justify-between xl:items-start mx-8 md:mx-12 xl:mx-32 xl:pb-16 text-center xl:text-left">
             <h1 className="flex gap-6 my-6 w-full justify-center md:justify-start pt-20 md:pt-32 xl:mt-20">
               <span className="opacity-25 font-bold md:text-[20px] xl:text-[28px]">
                 02
