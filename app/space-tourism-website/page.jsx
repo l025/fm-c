@@ -3,7 +3,7 @@
 export default function HomePage() {
   return (
     <>
-      <main className="flex justify-center items-end min-h-screen bg-neutral-100 ">
+      <div className="flex justify-center items-end min-h-screen bg-neutral-100 ">
         <div
           className={
             'bg bg-[url("/space-tourism-website/assets/home/background-home-mobile.jpg")]' +
@@ -33,7 +33,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   )
 }
