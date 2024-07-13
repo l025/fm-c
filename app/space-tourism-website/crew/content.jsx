@@ -10,10 +10,10 @@ export default function CrewContent({ data }) {
   }, [])
   return (
     <>
-      <main className="flex justify-center items-end min-h-screen bg-neutral-100 ">
+      <div className="flex justify-center items-end min-h-screen bg-neutral-100 ">
         <div
           className={
-            'bg bg-[url("/space-tourism-website/assets/crew/background-crew-mobile.jpg")]' +
+            'bg brightness-50 bg-[url("/space-tourism-website/assets/crew/background-crew-mobile.jpg")]' +
             ' md:bg-[url("/space-tourism-website/assets/crew/background-crew-tablet.jpg")]' +
             ' xl:bg-[url("/space-tourism-website/assets/crew/background-crew-desktop.jpg")]'
           }></div>
@@ -77,7 +77,7 @@ export default function CrewContent({ data }) {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   )
 }

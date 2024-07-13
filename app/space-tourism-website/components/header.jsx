@@ -41,14 +41,14 @@ export default function Header() {
                 height={48}
               />
             </Link>
-            <div className="hidden xl:block flex-1 w-full h-[1px] ml-4 -mr-12 bg-white/30 relative z-10"></div>
+            <div className="hidden xl:block flex-1 w-full h-[1px] ml-4 -mr-12 bg-white/20 relative z-10"></div>
             <nav className="hidden md:flex nav-text flex-1 w-full pl-16 pr-8 xl:pl-32 xl:pr-16  justify-end gap-12 uppercase backdrop-blur-2xl bg-white/5 text-white">
               {navs.map(nav => (
                 <Link
                   key={nav.no}
                   href={nav.href}
                   className={
-                    'flex gap-3 py-10 border-b-[3px] hover:border-white/50 transition-colors' +
+                    'flex gap-3 py-8 border-b-[3px] hover:border-white/50 transition-colors' +
                     (pathname === nav.href
                       ? ' border-white'
                       : ' border-transparent')

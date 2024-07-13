@@ -10,10 +10,10 @@ export default function DestinationContent({ data }) {
   }, [])
   return (
     <>
-      <main className="flex justify-center items-end min-h-screen bg-neutral-100 ">
+      <div className="flex justify-center items-end min-h-screen bg-neutral-100 ">
         <div
           className={
-            'bg justify-center items-start md:items-start min-h-screen bg-neutral-100 bg-cover brightness-50' +
+            'bg brightness-50 justify-center items-start md:items-start min-h-screen bg-neutral-100 bg-cover brightness-50' +
             ' bg-[url("/space-tourism-website/assets/destination/background-destination-mobile.jpg")]' +
             ' md:bg-[url("/space-tourism-website/assets/destination/background-destination-tablet.jpg")]' +
             ' xl:bg-[url("/space-tourism-website/assets/destination/background-destination-desktop.jpg")]'
@@ -85,7 +85,7 @@ export default function DestinationContent({ data }) {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   )
 }

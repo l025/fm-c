@@ -14,7 +14,7 @@
 
 @layer utilities {
   .bg {
-    @apply absolute z-0 left-0 top-0 w-full h-full bg-cover brightness-50;
+    @apply absolute z-0 left-0 top-0 w-full h-full bg-cover;
   }
 
   .nav-text {

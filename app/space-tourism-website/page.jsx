@@ -26,7 +26,7 @@ export default function HomePage() {
                 of this world experience!
               </p>
             </div>
-            <div className="flex-1 flex items-center justify-center py-5 xl:py-auto">
+            <div className="flex-1 flex items-center justify-center xl:justify-end py-5 xl:py-auto xl:self-end">
               <button className="h-s text-primary uppercase bg-white rounded-full flex justify-center items-center w-[144px] h-[144px] md:w-[272px] md:h-[272px] hover:outline-white/10 outline outline-[88px] outline-white/0 transition-all duration-[600ms] hover:text-primary/50	">
                 explore
               </button>
