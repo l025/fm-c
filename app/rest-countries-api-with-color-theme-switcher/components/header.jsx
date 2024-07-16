@@ -9,7 +9,7 @@ export default function Header() {
       <header className="w-screen shadow-md relative">
         <div className="container mx-auto">
           <div className="flex justify-between items-center px-5 py-6">
-            <Link href={'/'} className="font-bold">
+            <Link href={'/'} className="text-lg font-bold">
               Where in the world?
             </Link>
 

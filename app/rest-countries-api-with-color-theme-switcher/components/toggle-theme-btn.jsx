@@ -9,15 +9,15 @@ const ToggleThemeBtn = () => {
 
   if (theme === 'dark')
     return (
-      <button className="flex gap-2" onClick={toggle}>
-        <Moon />
-        <span>Dark Mode</span>
+      <button className="flex gap-2 items-center" onClick={toggle}>
+        <Sun />
+        <span>Light Mode</span>
       </button>
     )
 
   return (
-    <button className="flex gap-2" onClick={toggle}>
-      <Sun />
+    <button className="flex gap-2 items-center" onClick={toggle}>
+      <Moon />
       <span>Dark Mode</span>
     </button>
   )

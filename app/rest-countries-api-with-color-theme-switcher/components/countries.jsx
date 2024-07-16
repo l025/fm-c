@@ -1,14 +1,17 @@
 'use client'
 
-import useSWR from 'swr'
 import Country from './country'
 import { useEffect, useState } from 'react'
+import Filters from './filters'
 
-export default function Countries({ search, region }) {
+export default function Countries() {
   const [countries, setCountries] = useState([])
   const [filteredCountries, setFilteredCountries] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(null)
+
+  const [search, setSearch] = useState('')
+  const [region, setRegion] = useState('')
 
   useEffect(() => {
     const fetchData = async () => {
@@ -58,11 +61,17 @@ export default function Countries({ search, region }) {
 
   return (
     <>
-      <section className="flex flex-wrap gap-10 xl:gap-16 justify-around p-5 my-4">
-        {filteredCountries.map(country => (
-          <Country key={country?.name?.common} country={country} />
-        ))}
-      </section>
+      <div className="px-5 py-6">
+        <Filters
+          filterSearch={v => setSearch(v)}
+          filterRegion={v => setRegion(v)}
+        />
+        <section className="flex flex-wrap gap-8 xl:gap-16 justify-around p-5 md:p-2 my-10">
+          {filteredCountries.map(country => (
+            <Country key={country?.name?.common} country={country} />
+          ))}
+        </section>
+      </div>
     </>
   )
 }

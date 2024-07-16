@@ -2,7 +2,7 @@ import { Search } from '@geist-ui/icons'
 
 export default function Filters({ filterSearch, filterRegion }) {
   return (
-    <section className="flex flex-col lg:flex-row flex-wrap gap-4 justify-between items-start w-full h-full">
+    <section className="flex flex-col md:flex-row flex-wrap gap-4 justify-between items-start w-full h-full my-4">
       <div className="w-full max-w-md relative drop-shadow-sm shadow rounded-md border border-content/10 overflow-hidden bg-secondary">
         <label htmlFor="search">
           <Search className="absolute left-3 top-3" color="#aaa" />
