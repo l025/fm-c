@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,6 +22,7 @@ module.exports = {
 
       primary: 'hsl(var(--color-primary) / <alpha-value>)',
       secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+      content: 'hsl(var(--color-content) / <alpha-value>)',
       neutral: {
         100: 'hsl(var(--color-neutral-100) / <alpha-value>)',
         300: 'hsl(var(--color-neutral-300) / <alpha-value>)',
@@ -35,6 +37,8 @@ module.exports = {
       base: ['var(--font-size)', '24px'],
       lg: ['20px', '28px'],
       xl: ['24px', '32px'],
+      '2xl': ['32px', '44px'],
+      '3xl': ['44px', '64px'],
     },
 
     extend: {},
