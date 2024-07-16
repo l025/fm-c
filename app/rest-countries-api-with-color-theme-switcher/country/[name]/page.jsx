@@ -17,7 +17,7 @@ export default function CountryPage({ params }) {
 
       try {
         const response = await fetch(
-          'https://restcountries.com/v3.1/name/' + params.name
+          'https://restcountries.com/v3.1/name/' + decodeURI(params.name)
         )
         const data = await response.json()
         setCountry(data)

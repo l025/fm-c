@@ -3,8 +3,10 @@ import Link from 'next/link'
 export default function Country({ country }) {
   return (
     <Link
-      className="w-full md:max-w-80 lg:max-w-72 xl:max-w-64"
-      href={`/rest-countries-api-with-color-theme-switcher/country/${country?.name?.common.toLowerCase()}`}>
+      className="w-full md:max-w-72 lg:max-w-72 xl:max-w-64"
+      href={`/rest-countries-api-with-color-theme-switcher/country/${encodeURI(
+        country?.name?.common.toLowerCase()
+      )}`}>
       <div className=" flex flex-col shadow-sm rounded-md border border-content/10 bg-secondary pb-3">
         <img
           src={country?.flags?.png}

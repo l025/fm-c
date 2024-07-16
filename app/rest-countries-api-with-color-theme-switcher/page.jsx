@@ -11,6 +11,9 @@ export default function HomePage() {
   return (
     <>
       <div className="container mx-auto">
+        <h1 className="hidden">
+          Frontend Mentor - REST Countries API with color theme switcher
+        </h1>
         <div className="px-5 py-6">
           <Filters
             filterSearch={v => setSearch(v)}
