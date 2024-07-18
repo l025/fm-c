@@ -20,9 +20,10 @@ export default function Filters({ filterSearch, filterRegion }) {
       <div className="relative drop-shadow-sm shadow rounded-md border border-content/10 overflow-hidden pr-2 bg-secondary">
         <select
           name="region"
+          id="region"
           onChange={e => filterRegion(e.target.value)}
           className="p-3 border-none focus:outline-none bg-secondary">
-          <option value="">All Regions</option>
+          <option value="">Filter by Region</option>
           <option value="Africa">Africa</option>
           <option value="Americas">Americas</option>
           <option value="Asia">Asia</option>

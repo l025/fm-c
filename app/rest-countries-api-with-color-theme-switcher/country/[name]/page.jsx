@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import { ArrowLeft } from '@geist-ui/icons'
-import { usePathname, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 export default function CountryPage({ params }) {
@@ -17,7 +16,7 @@ export default function CountryPage({ params }) {
 
       try {
         const response = await fetch(
-          'https://restcountries.com/v3.1/name/' + decodeURI(params.name)
+          'https://restcountries.com/v3.1/alpha/' + decodeURI(params.name)
         )
         const data = await response.json()
         setCountry(data)
@@ -111,16 +110,22 @@ export default function CountryPage({ params }) {
                 </div>
 
                 <div className="flex flex-col lg:flex-row lg:gap-8 lg:items-center">
-                  <span className="font-bold text-lg">Border Countries:</span>
-                  <div className="flex gap-3 my-2">
+                  <span className="font-bold text-lg text-nowrap self-start">
+                    Border Countries:
+                  </span>
+                  <ul className="flex flex-wrap gap-3 my-2">
                     {country[0]?.borders?.map(b => (
-                      <span
-                        key={b}
-                        className="px-5 py-1.5 shadow rounded-sm bg-secondary text-sm">
-                        {b}
-                      </span>
+                      <li key={b}>
+                        <Link
+                          href={`/rest-countries-api-with-color-theme-switcher/country/${encodeURI(
+                            b?.toLowerCase()
+                          )}`}
+                          className="px-5 py-1.5 shadow rounded-sm bg-secondary hover:bg-primary text-sm">
+                          {b}
+                        </Link>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
             </div>

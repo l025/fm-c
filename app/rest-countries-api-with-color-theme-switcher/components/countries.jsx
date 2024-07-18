@@ -20,7 +20,7 @@ export default function Countries() {
 
       try {
         const response = await fetch(
-          'https://restcountries.com/v3.1/all?fields=name,region,flags,population,capital&region=Asia'
+          'https://restcountries.com/v3.1/all?fields=name,region,flags,population,capital,cca2'
         )
         const data = await response.json()
         setCountries(data)
