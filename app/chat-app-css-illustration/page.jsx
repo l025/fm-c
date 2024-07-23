@@ -15,54 +15,53 @@ export default function HomePage() {
       }, delay)
     }
 
-    // // Tilt effect
+    // Tilt effect
+    const el = document.querySelector('.mobile-wrapper')
+    const elShadow = document.querySelector('.mobile-shadow')
 
-    // const el = document.querySelector('.mobile-wrapper')
-    // const elShadow = document.querySelector('.mobile-shadow')
+    const elXPos = el.getBoundingClientRect().left
+    const elYPos = el.getBoundingClientRect().top
+    const width = el.getBoundingClientRect().width
+    const height = el.getBoundingClientRect().height
 
-    // const elXPos = el.getBoundingClientRect().left
-    // const elYPos = el.getBoundingClientRect().top
-    // const width = el.getBoundingClientRect().width
-    // const height = el.getBoundingClientRect().height
+    gsap.set(el, {
+      transformPerspective: 900,
+      transformOrigin: 'center center -10',
+    })
+    gsap.set(elShadow, {
+      transformPerspective: 900,
+      transformOrigin: 'center center -10',
+    })
 
-    // gsap.set(el, {
-    //   transformPerspective: 900,
-    //   transformOrigin: 'center center -10',
-    // })
-    // gsap.set(elShadow, {
-    //   transformPerspective: 900,
-    //   transformOrigin: 'center center -10',
-    // })
+    el.parentElement.addEventListener('mousemove', e => {
+      const elRelativeXPos = e.pageX - elXPos
+      const elRelativeYPos = e.pageY - elYPos
+      const xPos = (elRelativeXPos / width - 0.5) * 4
+      const yPos = (elRelativeYPos / height - 0.5) * 4
+      const rotationXValue = -7 * yPos
+      const rotationYValue = 7 * xPos
 
-    // el.parentElement.addEventListener('mousemove', e => {
-    //   const elRelativeXPos = e.pageX - elXPos
-    //   const elRelativeYPos = e.pageY - elYPos
-    //   const xPos = (elRelativeXPos / width - 0.5) * 4
-    //   const yPos = (elRelativeYPos / height - 0.5) * 4
-    //   const rotationXValue = -7 * yPos
-    //   const rotationYValue = 7 * xPos
-
-    //   gsap.to(el, {
-    //     rotationY: rotationYValue,
-    //     rotationX: rotationXValue,
-    //   })
-    //   gsap.to(elShadow, {
-    //     rotationY: rotationYValue * -1,
-    //     rotationX: rotationXValue,
-    //   })
-    // })
-    // el.parentElement.addEventListener('mouseleave', e => {
-    //   gsap.to(el, {
-    //     rotationY: 0,
-    //     rotationX: 0,
-    //     ease: 'power4.out',
-    //   })
-    //   gsap.to(elShadow, {
-    //     rotationY: 0,
-    //     rotationX: 0,
-    //     ease: 'power4.out',
-    //   })
-    // })
+      gsap.to(el, {
+        rotationY: rotationYValue,
+        rotationX: rotationXValue,
+      })
+      gsap.to(elShadow, {
+        rotationY: rotationYValue * -1,
+        rotationX: rotationXValue,
+      })
+    })
+    el.parentElement.addEventListener('mouseleave', e => {
+      gsap.to(el, {
+        rotationY: 0,
+        rotationX: 0,
+        ease: 'power4.out',
+      })
+      gsap.to(elShadow, {
+        rotationY: 0,
+        rotationX: 0,
+        ease: 'power4.out',
+      })
+    })
   }, [])
   return (
     <>
