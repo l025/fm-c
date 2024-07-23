@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 150 100% 66%;
+    --color-secondary: 217 19% 38%;
+    --color-content: 193 38% 86%;
+  }
+}
+
+body {
+  font-family: 'Manrope';
+  background-color: hsl(218, 23%, 16%);
+}
+.advice-container {
+  @apply flex flex-col gap-7 items-center justify-center px-8 pt-8 text-center rounded-xl w-full lg:w-[500px];
+  background-color: hsl(217, 19%, 24%);
+}
+h2 {
+  @apply uppercase text-primary text-xs tracking-[0.3rem];
+}
+blockquote {
+  @apply text-white text-xl leading-normal font-medium;
+}
+
+blockquote::before {
+  content: '\201C';
+}
+
+blockquote::after {
+  content: '\201D';
+}
+
+button {
+  @apply flex items-center justify-center rounded-full bg-primary w-16 h-16 -mb-8 transition-all;
+}
+button:hover {
+  box-shadow: 0 0 25px hsl(var(--color-primary));
+}
