@@ -53,60 +53,58 @@ body {
 }
 .mobile-wrapper {
   @apply scale-[65%] xl:scale-75 relative flex flex-col justify-center xl:justify-start items-center xl:items-start w-[400px] h-[810px] text-sm bg-[var(--color-bg)] rounded-[2.2rem] ring-[16px] ring-white overflow-hidden;
+}
+.mobile-wrapper .top {
+  @apply absolute z-10 top-0 left-1/4 bg-white w-2/4 h-8 rounded-b-3xl;
+}
+.mobile-wrapper .contact-info {
+  @apply w-full flex gap-2 items-center mt-[2px] p-4 pt-12 drop-shadow-lg rounded-b-md bg-gradient-to-r from-[var(--color-gradient-violet)] to-[var(--color-gradient-magenta)];
 
-  .top {
-    @apply absolute z-10 top-0 left-1/4 bg-white w-2/4 h-8 rounded-b-3xl;
+  img {
+    @apply ring-[2px] ring-opacity-50 ring-white w-10 h-10 rounded-full;
   }
-  .contact-info {
-    @apply w-full flex gap-2 items-center mt-[2px] p-4 pt-12 drop-shadow-lg rounded-b-md bg-gradient-to-r from-[var(--color-gradient-violet)] to-[var(--color-gradient-magenta)];
+}
+.mobile-wrapper .content {
+  @apply flex-1 flex flex-col px-4 py-4 bg-[var(--color-bg)];
+}
+.mobile-wrapper .content .msg-wrapper {
+  @apply flex-1 flex flex-col gap-[14px];
+
+  .chat-left {
+    @apply self-start bg-[var(--color-bg-chat-left)] p-2.5 pr-5 rounded-2xl rounded-bl-md text-[var(--color-text-chat-left)] max-w-[60%];
+  }
+  .chat-left-time {
+    @apply self-start pl-4 pr-6 py-2.5 rounded-2xl rounded-bl-md text-sm text-white w-[80%] max-w-[80%] flex gap-4 items-center bg-gradient-to-l from-[var(--color-gradient-violet)] to-[var(--color-gradient-magenta)];
+
+    .radio {
+      @apply rounded-full w-5 h-5 border-[3px] border-[var(--color-radio-button-outline)] opacity-85;
+    }
+    .desc {
+      @apply flex-1 opacity-85;
+    }
+    .price {
+      @apply text-xl font-medium opacity-85;
+    }
+  }
+  .chat-right {
+    @apply self-end bg-[var(--color-bg-chat-right)] p-2.5 rounded-2xl rounded-br-md text-sm text-[var(--color-text-chat-right)] max-w-[60%] shadow-lg shadow-gray-200;
+  }
+  .chat-right-album-wrapper {
+    @apply flex gap-3 self-end;
 
     img {
-      @apply ring-[2px] ring-opacity-50 ring-white w-10 h-10 rounded-full;
+      @apply rounded-[1.3rem] w-[70px];
     }
   }
-  .content {
-    @apply flex-1 flex flex-col px-4 py-4 bg-[var(--color-bg)];
+}
+.mobile-wrapper .content .input-wrapper {
+  @apply relative flex items-center rounded-full overflow-hidden mt-2;
 
-    .msg-wrapper {
-      @apply flex-1 flex flex-col gap-[14px];
-
-      .chat-left {
-        @apply self-start bg-[var(--color-bg-chat-left)] p-2.5 pr-5 rounded-2xl rounded-bl-md text-[var(--color-text-chat-left)] max-w-[60%];
-      }
-      .chat-left-time {
-        @apply self-start pl-4 pr-6 py-2.5 rounded-2xl rounded-bl-md text-sm text-white w-[80%] max-w-[80%] flex gap-4 items-center bg-gradient-to-l from-[var(--color-gradient-violet)] to-[var(--color-gradient-magenta)];
-
-        .radio {
-          @apply rounded-full w-5 h-5 border-[3px] border-[var(--color-radio-button-outline)] opacity-85;
-        }
-        .desc {
-          @apply flex-1 opacity-85;
-        }
-        .price {
-          @apply text-xl font-medium opacity-85;
-        }
-      }
-      .chat-right {
-        @apply self-end bg-[var(--color-bg-chat-right)] p-2.5 rounded-2xl rounded-br-md text-sm text-[var(--color-text-chat-right)] max-w-[60%] shadow-lg shadow-gray-200;
-      }
-      .chat-right-album-wrapper {
-        @apply flex gap-3 self-end;
-
-        img {
-          @apply rounded-[1.3rem] w-[70px];
-        }
-      }
-    }
-    .input-wrapper {
-      @apply relative flex items-center rounded-full overflow-hidden mt-2;
-
-      input {
-        @apply px-8 py-5 text-[1rem] text-[var(--color-text-main-heading)] w-full placeholder-[var(--color-text-placeholder)] focus:outline-none;
-      }
-      button {
-        @apply absolute right-2 m-0 rounded-full bg-[var(--color-submit-button)] text-white w-[43px] h-[43px];
-      }
-    }
+  input {
+    @apply px-8 py-5 text-[1rem] text-[var(--color-text-main-heading)] w-full placeholder-[var(--color-text-placeholder)] focus:outline-none;
+  }
+  button {
+    @apply absolute right-2 m-0 rounded-full bg-[var(--color-submit-button)] text-white w-[43px] h-[43px];
   }
 }
 
